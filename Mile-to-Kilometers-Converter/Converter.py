@@ -37,5 +37,3 @@ button = Button(text='Calculate', command=button_clicked)
 button.grid(row=2, column=1)
 
 window.mainloop()
-def pri(x):
-    print(x)
