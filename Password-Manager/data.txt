@@ -1,0 +1,4 @@
+amazon | angela@gmail.com | 123456
+ebay | angela@gmail.com | qwerty
+ | angela@gmail.com | 
+a | angela@gmail.com | b
