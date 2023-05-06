@@ -21,6 +21,13 @@ data = pd.read_csv('nato_phonetic_alphabet.csv')
 nato_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 # print(nato_dict)
 
-name = input('What is your name?: ').upper()
-nato_coded = [nato_dict[letter] for letter in name]
-print(nato_coded)
+def generate_phonetic():
+    name = input('What is your name?: ').upper()
+    try:
+        nato_coded = [nato_dict[letter] for letter in name]
+    except KeyError:
+        print('Sorry, only letters in the alphabet please')
+        generate_phonetic()
+    else:
+        print(nato_coded)
+generate_phonetic()
